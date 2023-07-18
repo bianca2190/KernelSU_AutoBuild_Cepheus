@@ -1,10 +1,10 @@
 name: EvolutionX_build_kernel
 
 env:
-  KERNEL_SOURCE: 'https://github.com/chematelegram/kernel_xiaomi_cepheus'
+  KERNEL_SOURCE: 'https://github.com/bianca2190/kernel_xiaomi_vayu'
   KERNEL_SOURCE_BRANCH: 'tiramisu'
-  KERNEL_DEFCONFIG: 'cepheus_defconfig'
-  KERNEL_NAME: 'evolutionX-cepheus'
+  KERNEL_DEFCONFIG: 'vayu_defconfig'
+  KERNEL_NAME: 'EvolutionX-SU-by-MKV'
   
 on:
   schedule:
