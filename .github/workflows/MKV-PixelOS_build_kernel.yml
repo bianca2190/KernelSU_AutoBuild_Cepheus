@@ -1,9 +1,9 @@
-name: PixelOS_build_kernel
+name: EvoX_build_kernel
 env:
-  KERNEL_SOURCE: 'https://github.com/balgxmr/kernel_xiaomi_cepheus'
-  KERNEL_SOURCE_BRANCH: 'thirteen'
-  KERNEL_DEFCONFIG: 'cepheus_defconfig'
-  KERNEL_NAME: 'pixelos-cepheus'
+  KERNEL_SOURCE: 'https://github.com/bianca2190/kernel_xiaomi_vayu'
+  KERNEL_SOURCE_BRANCH: 'tiramisu'
+  KERNEL_DEFCONFIG: 'vayu_defconfig'
+  KERNEL_NAME: 'EvolutionX-SU-by-MKV'
   
 on:
 
@@ -26,7 +26,7 @@ jobs:
         run: |
           
           cd $GITHUB_WORKSPACE/kernel_workspace/android-kernel
-          cp $GITHUB_WORKSPACE/patch/pixelOS_kernel/anykernel.sh $GITHUB_WORKSPACE/patch/pixelOS_kernel/build.sh $GITHUB_WORKSPACE/kernel_workspace/android-kernel
+          cp $GITHUB_WORKSPACE/patch/vayu/anykernel.sh $GITHUB_WORKSPACE/patch/vayu/build.sh $GITHUB_WORKSPACE/kernel_workspace/android-kernel
           sed -i "s/KERNEL_NAME=.*/KERNEL_NAME=${KERNEL_NAME}-"$(date "+%Y%m%d%H%M%S")"/g" build.sh
           
           
